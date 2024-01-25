@@ -1,0 +1,70 @@
+body {
+  background: #111827;
+}
+
+nav div {
+  background: #4b5563;
+}
+
+nav div span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search input[type="search"] {
+  background-color: rgba(31, 41, 55, 0.6);
+}
+
+.search input[type="search"]::placeholder {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.date {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.name {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.work {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
