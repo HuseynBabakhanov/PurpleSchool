@@ -1,0 +1,55 @@
+body {
+  background: #fdc5c5;
+}
+main,
+header,
+footer {
+  background: #fffefe;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+header a {
+  color: #089fe0;
+  font-size: 18px;
+}
+
+.company {
+  background: #fff;
+}
+
+.company input::placeholder {
+  color: #181818;
+  font-size: 16px;
+}
+
+.name input::placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.email input::placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.register input[type="submit"] {
+  background-color: #089fe0;
+  color: #fff;
+}
+
+label {
+  color: #666;
+}
+
+footer a {
+  color: #089fe0;
+}
