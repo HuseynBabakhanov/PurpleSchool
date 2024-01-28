@@ -1,32 +1,36 @@
 body {
   background: #111827;
+  font-family: "Roboto", sans-serif;
 }
 
-nav div {
-  background: #4b5563;
+nav {
+  margin: 80px 0 80px 0;
 }
-
-nav div span {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
+nav ul {
+  list-style: none;
 }
 
 nav ul li a {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
+  text-decoration: none;
 }
 
-.search input[type="search"] {
-  background-color: rgba(31, 41, 55, 0.6);
-}
-
-.search input[type="search"]::placeholder {
+h1 {
   color: #fff;
-  opacity: 0.6;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.icon {
+  background: #4b5563;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 12px;
+  margin-right: 10px;
 }
 
 .date {
@@ -34,19 +38,13 @@ nav ul li a {
   opacity: 0.6;
   font-size: 14px;
   font-weight: 400;
-}
-
-h1 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 400;
+  margin: 80px 0 14px 0;
 }
 
 .name {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  opacity: 0.6;
 }
 
 .work {
@@ -54,17 +52,48 @@ h1 {
   font-size: 14px;
   font-weight: 400;
   opacity: 0.6;
+  margin-bottom: 28px;
+}
+.main_photo {
+  margin-bottom: 69px;
 }
 
-p {
+.theory {
   color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.color {
+  color: #fff;
+  font-family: Roboto;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
 }
 
 .copyright {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   opacity: 0.6;
+  margin-top: 103px;
+}
+
+input[type="search"] {
+  background: rgba(31, 41, 55, 0.6);
+  border-radius: 100px;
+  width: 224px;
+  height: 40px;
+  border: none;
+}
+
+.search input[type="search"]::placeholder {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 128px 12px 49px;
 }
