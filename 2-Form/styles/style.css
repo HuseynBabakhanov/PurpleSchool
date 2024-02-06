@@ -19,27 +19,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background: #fffefe;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  max-width: 582px;
-}
-
-input {
-  padding-left: 11px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.enter {
-  margin-top: -60px;
-}
-
 header h1 {
   font-size: 36px;
   font-weight: 700;
@@ -60,43 +39,33 @@ header a {
   text-decoration-line: underline;
 }
 
-.main_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 95px 132px 95px;
+a {
+  color: #089fe0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
 }
 
-.company {
-  padding-bottom: 21px;
-}
-.company input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
   width: 394px;
   height: 44px;
   border-radius: 5px;
   border: 1px solid #f5f5f5;
-  background: #fff;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
-.company input::placeholder {
-  color: #333;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
+input[type="submit"] {
+  background-color: #089fe0;
+  color: #fff;
 }
+
 input::placeholder {
   padding-left: 11px;
-}
-
-.name {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-  height: 44px;
-  border: none;
-  margin-bottom: 21px;
-  margin-top: 21;
 }
 
 .name input[type="text"] {
@@ -105,6 +74,7 @@ input::placeholder {
   background: #f5f5f5;
   border: none;
   border-radius: 5px;
+  width: 190px;
 }
 
 .name input::placeholder {
@@ -117,17 +87,28 @@ input::placeholder {
   line-height: normal;
 }
 
-.email {
-  padding-bottom: 21px;
+.company input[type="text"] {
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+  background: #fff;
 }
+
+.company input::placeholder {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
 .email input[type="email"] {
-  width: 394px;
+  width: 392px;
   height: 44px;
-  flex-shrink: 0;
   border-radius: 5px;
   background: #f5f5f5;
   border: none;
 }
+
 .email input::placeholder {
   color: #999;
   font-family: "Open Sans";
@@ -154,11 +135,43 @@ input::placeholder {
   line-height: normal;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.enter {
+  margin-top: -60px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fffefe;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  max-width: 582px;
+  height: 573px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 95px 132px 95px;
+}
+
+.company {
+  padding-bottom: 21px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.email {
+  padding-bottom: 21px;
+}
+
 .text {
   color: #666;
   font-family: "Open Sans";
@@ -168,31 +181,6 @@ input::placeholder {
   line-height: normal;
 }
 
-a {
-  color: #089fe0;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-/* Footer styles */
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.terms {
   padding-top: 21px;
-}
-
-.footer label .text {
-  margin-left: 8px;
-}
-
-.footer a {
-  color: #089fe0;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
 }
