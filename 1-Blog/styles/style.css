@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -40,10 +41,6 @@ header nav ul {
   justify-content: center;
   gap: 16px;
 }
-nav {
-  margin: 80px 0 80px 0;
-}
-
 nav ul li a {
   color: #fff;
   font-family: Roboto;
@@ -56,6 +53,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
 }
+
 h1 {
   display: flex;
   justify-content: center;
@@ -66,6 +64,26 @@ h1 {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
+
+nav {
+  margin: 80px 0 80px 0;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .icon {
@@ -112,13 +130,15 @@ h1 {
 .theory {
   display: flex;
   justify-content: center;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
-  margin-bottom: 40px;
+  opacity: 0.6;
+  margin-bottom: 28px;
 }
-
+  
+.main_photo {
+  margin-bottom: 69px;
+}
 .color {
   color: #fff;
   font-family: Roboto;
@@ -127,6 +147,7 @@ h1 {
   font-weight: 400;
   display: flex;
   justify-content: center;
+
 }
 
 .copyright {
