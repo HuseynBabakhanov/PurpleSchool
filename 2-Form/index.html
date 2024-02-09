@@ -4,45 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Формы</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="header_container">
+        <div>
           <h1>Регистрация</h1>
-          <div class="enter">
-            <p>Уже есть аккаунт?<a href="#">Войти</a></p>
-          </div>
+        </div>
+        <div class="enter">
+          <p>Уже есть аккаунт?</p>
+          <a href="#">Войти</a>
         </div>
       </header>
       <main>
-        <div class="main_container">
-          <form action="form">
-            <div class="company">
-              <input type="text" name="company" placeholder="Моя компания" />
-            </div>
-            <div class="name">
-              <input type="text" name="firstName" placeholder="Имя" />
-              <input type="text" name="lastName" placeholder="Фамилия" />
-            </div>
-            <div class="email">
-              <input type="email" name="email" placeholder="E-mail" />
-            </div>
-            <div class="register">
-              <input type="submit" value="Зарегистрироваться" />
-            </div>
-          </form>
-          <footer class="terms">
-            <label>
-              <input type="checkbox" name="terms" />
-              <span class="text">Я прочитал и принимаю</span>
-            </label>
-            <a href="#">Условия использования</a>
-          </footer>
-        </div>
+        <form action="form">
+          <div class="company">
+            <input type="text" name="company" placeholder="Моя компания" />
+          </div>
+          <div class="name">
+            <input type="text" name="firstName" placeholder="Имя" />
+            <input type="text" name="lastName" placeholder="Фамилия" />
+          </div>
+          <div class="email">
+            <input type="email" name="email" placeholder="E-mail" />
+          </div>
+          <div class="register">
+            <input type="submit" value="Зарегистрироваться" />
+          </div>
+        </form>
       </main>
+      <footer>
+        <label>
+          <input type="checkbox" name="terms" />
+          Я прочитал и принимаю
+        </label>
+        <a href="#">Условия использования</a>
+      </footer>
     </div>
   </body>
 </html>

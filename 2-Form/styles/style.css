@@ -5,10 +5,6 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: linear-gradient(
       243deg,
       #fdc5c5 25.45%,
@@ -16,35 +12,59 @@ body {
     ),
     linear-gradient(243deg, #ffa5a5 32.96%, rgba(255, 255, 255, 0) 82.03%),
     #f39494;
-  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fffefe;
+  margin: 225px auto 226px;
+  width: 582px;
+  height: 573px;
+  background: #fffefe;
+}
+
+header {
+  padding: 72px;
+  min-height: 52px;
 }
 
 header h1 {
+  color: #333;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
   font-size: 36px;
   font-weight: 700;
-  padding: 72px;
-  margin: 0;
 }
 
 header p {
+  color: #666;
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
-  color: #666666;
 }
+
 header a {
-  margin-left: 30px;
   color: #089fe0;
+  font-family: "Open Sans";
+  font-weight: 400;
   font-size: 18px;
-  line-height: normal;
   text-decoration-line: underline;
 }
 
-a {
-  color: #089fe0;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  text-decoration: none;
+.enter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
 }
 
 input[type="text"],
@@ -52,58 +72,58 @@ input[type="email"],
 input[type="submit"] {
   width: 394px;
   height: 44px;
-  border-radius: 5px;
-  border: 1px solid #f5f5f5;
-  padding: 10px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
 }
 
-input[type="submit"] {
-  background-color: #089fe0;
-  color: #fff;
-}
-
-input::placeholder {
-  padding-left: 11px;
-}
-
-.name input[type="text"] {
-  flex: 1;
-  margin-right: 1px;
-  background: #f5f5f5;
-  border: none;
-  border-radius: 5px;
-  width: 190px;
-}
-
-.name input::placeholder {
-  color: #999;
-  font-size: 16px;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.company input[type="text"] {
+.company input {
   border-radius: 5px;
   border: 1px solid #f5f5f5;
   background: #fff;
 }
 
 .company input::placeholder {
+  font-size: 16px;
   color: #333;
   font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
+  padding: 11px;
 }
 
-.email input[type="email"] {
-  width: 392px;
-  height: 44px;
+.name {
+  display: flex;
+  flex: 1;
+  max-width: 394px;
+  gap: 1px;
+}
+.name input:first-child {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.name input:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.name input {
+  border-radius: 5px;
+  background: #f5f5f5;
+  border: none;
+}
+.name input::placeholder {
+  color: #999;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  padding: 11px;
+}
+
+.register input {
+  border-radius: 5px;
+  background: #089fe0;
+}
+.email input {
   border-radius: 5px;
   background: #f5f5f5;
   border: none;
@@ -115,17 +135,12 @@ input::placeholder {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
-  line-height: normal;
+  padding: 11px;
 }
 
 .register input[type="submit"] {
   background-color: #089fe0;
-  color: #fff;
-  border-radius: 5px;
   border: none;
-  background: #089fe0;
-  width: 394px;
-  height: 44px;
   color: #fff;
   text-align: center;
   font-family: "Open Sans";
@@ -135,52 +150,26 @@ input::placeholder {
   line-height: normal;
 }
 
-.enter {
-  margin-top: -60px;
-}
-
-.container {
+footer {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background: #fffefe;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  max-width: 582px;
-  height: 573px;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 22px;
+  max-width: calc(394px + 44px);
+  margin: 0 auto;
 }
 
-.main_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 95px 132px 95px;
-}
-
-.company {
-  padding-bottom: 21px;
-}
-
-.name {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 21px;
-}
-
-.email {
-  padding-bottom: 21px;
-}
-
-.text {
+label {
   color: #666;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+footer a {
+  color: #089fe0;
   font-family: "Open Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-}
-
-.terms {
-  padding-top: 21px;
+  text-decoration: none;
 }
