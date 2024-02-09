@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  font-family: "Roboto", sans-serif;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 75px;
+  max-width: 1200px;
+}
+.date {
+  display: flex;
+  gap: 28px;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.author-info {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+nav {
+  margin: 80px 0 80px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.main_photo {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.icon {
+  background: #4b5563;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 12px;
+  margin-right: 10px;
+}
+
+.date {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 80px 0 14px 0;
+}
+
+.name {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.work {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.main_photo {
+  padding: 28px;
+  margin-bottom: 28px;
+}
+.text-section {
+  padding: 69px;
+}
+.theory {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.color {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-top: 103px;
+}
+
+input[type="search"] {
+  background: rgba(31, 41, 55, 0.6);
+  border-radius: 100px;
+  width: 224px;
+  height: 40px;
+  border: none;
+}
+
+.search input[type="search"]::placeholder {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 128px 12px 49px;
+}
