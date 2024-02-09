@@ -126,26 +126,29 @@ h1 {
 .text-section {
   padding: 69px;
 }
-.theory {
+.color {
   display: flex;
   justify-content: center;
-  font-size: 14px;
-  font-weight: 400;
-  opacity: 0.6;
-  margin-bottom: 28px;
-}
-
-.main_photo {
-  margin-bottom: 69px;
-}
-.color {
   color: #fff;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+
+.main_photo {
+  margin-bottom: 69px;
+}
+.theory {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
   display: flex;
   justify-content: center;
+  margin-bottom: 28px;
 }
 
 .copyright {
