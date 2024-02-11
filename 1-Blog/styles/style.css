@@ -21,9 +21,13 @@ header nav ul {
   max-width: 1200px;
 }
 
+.container {
+  max-width: 1200px;
+}
 .date {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  gap: 28px;
 }
 .menu-container {
   display: flex;
@@ -37,7 +41,6 @@ header nav ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -100,7 +103,6 @@ h1 {
   opacity: 0.6;
   font-size: 14px;
   font-weight: 400;
-  margin: 0 0 14px 0;
 }
 
 .name {
@@ -123,9 +125,20 @@ h1 {
   margin-bottom: 28px;
 }
 
-.color {
+.text-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  max-width: 708px;
+}
+.theory {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 28px;
+}
+.color {
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -134,16 +147,6 @@ h1 {
 
 .main_photo {
   margin-bottom: 69px;
-}
-.theory {
-  color: #fff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 160% */
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
 }
 
 .copyright {
@@ -168,4 +171,9 @@ input[type="search"] {
   font-size: 16px;
   font-weight: 400;
   padding: 9px 128px 12px 49px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
