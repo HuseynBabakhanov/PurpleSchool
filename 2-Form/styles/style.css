@@ -12,6 +12,7 @@ body {
     ),
     linear-gradient(243deg, #ffa5a5 32.96%, rgba(255, 255, 255, 0) 82.03%),
     #f39494;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -24,41 +25,30 @@ body {
   background: #fffefe;
 }
 
-header {
+.regestration {
   padding: 72px;
   min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header h1 {
+.regestration h1 {
   color: #333;
   text-align: center;
-  font-family: "Open Sans";
   font-style: normal;
-}
-body {
-  background: #fdc5c5;
-}
-main,
-header,
-footer {
-  background: #fffefe;
-}
-
-header h1 {
   font-size: 36px;
   font-weight: 700;
 }
 
-header p {
+.regestration p {
   color: #666;
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
 }
 
-header a {
+.regestration a {
   color: #089fe0;
-  font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
   text-decoration-line: underline;
@@ -92,10 +82,6 @@ input[type="submit"] {
   font-weight: 400;
   color: #666666;
 }
-header a {
-  color: #089fe0;
-  font-size: 18px;
-}
 
 .company {
   background: #fff;
@@ -104,7 +90,6 @@ header a {
 .company input::placeholder {
   font-size: 16px;
   color: #333;
-  font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -132,7 +117,6 @@ header a {
 }
 .name input::placeholder {
   color: #999;
-  font-family: "Open Sans";
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
@@ -159,7 +143,6 @@ header a {
 
 .email input::placeholder {
   color: #999;
-  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
   padding: 11px;
@@ -171,37 +154,28 @@ header a {
   border: none;
   color: #fff;
   text-align: center;
-  font-family: "Open Sans";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
 }
 
-footer {
+.terms {
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
-  padding: 22px;
-  max-width: calc(394px + 44px);
-  margin: 0 auto;
+  width: 394px;
+  gap: 15px;
   color: #fff;
 }
 
-label {
+.checkbox {
   color: #666;
-  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
 }
-footer a {
+.terms a {
   color: #089fe0;
-  font-family: "Open Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
-}
-
-footer a {
-  color: #089fe0;
 }
