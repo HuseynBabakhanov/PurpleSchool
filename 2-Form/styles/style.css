@@ -5,6 +5,8 @@
 }
 
 body {
+  display: flex;
+  height: 100vh;
   background: linear-gradient(
       243deg,
       #fdc5c5 25.45%,
@@ -16,10 +18,12 @@ body {
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
   border-radius: 10px;
   border: 1px solid #000;
-  background: #fffefe;
-  margin: 225px auto 226px;
   background: #fffefe;
   max-width: 582px;
   width: 100%;
