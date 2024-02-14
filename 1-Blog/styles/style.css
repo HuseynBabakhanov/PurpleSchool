@@ -1,10 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: #111827;
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
   font-family: "Roboto", sans-serif;
 }
 
-nav {
-  margin: 80px 0 80px 0;
+header {
+  padding: 80px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 75px;
+  max-width: 1200px;
+}
+
+.container {
+  max-width: 1200px;
+}
+.date {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.author-info {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.main_photo {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
 }
 nav ul {
   list-style: none;
@@ -38,40 +103,51 @@ h1 {
   opacity: 0.6;
   font-size: 14px;
   font-weight: 400;
-  margin: 80px 0 14px 0;
 }
 
 .name {
   color: #fff;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
 }
 
 .work {
   color: #fff;
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
   opacity: 0.6;
+}
+
+.main_photo {
+  padding: 28px;
   margin-bottom: 28px;
 }
-.main_photo {
-  margin-bottom: 69px;
-}
 
-.theory {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 40px;
+.text-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 708px;
+  gap: 20px;
 }
-
-.color {
+.text-section p {
   color: #fff;
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+.theory {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 28px;
+}
+
+.main_photo {
+  margin-bottom: 69px;
 }
 
 .copyright {
@@ -96,4 +172,9 @@ input[type="search"] {
   font-size: 16px;
   font-weight: 400;
   padding: 9px 128px 12px 49px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
